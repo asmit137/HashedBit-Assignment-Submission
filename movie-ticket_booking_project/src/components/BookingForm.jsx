@@ -49,16 +49,16 @@ const BookingForm = () => {
           />
         </div>
         <div className={styles.formGroup}>
-          <label htmlFor="mobile" className={styles.label}>Mobile:</label>
+          <label htmlFor="mobile" className={styles.label}>No. of Seats:</label>
           <input
-            type="text"
-            id="mobile"
-            name="mobile"
+            type="number"
+            id="number"
+            name="number"
             className={styles.input}
-            value={formData.mobile}
+            value={formData.number}
             onChange={handleChange}
             required
-            placeholder="Enter your mobile number"
+            placeholder="Enter number of seats"
           />
         </div>
         <button type="submit" className={styles.submitButton}>Book My Seat</button>

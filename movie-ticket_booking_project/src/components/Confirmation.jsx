@@ -14,7 +14,7 @@ const Confirmation = () => {
     );
   }
 
-  const bookingId = Math.floor(100000 + Math.random() * 900000); // 6-digit ID
+  const bookingId = Math.floor(100000 + Math.random() * 900000); 
 
   return (
     <div className={styles.container}>
@@ -24,7 +24,7 @@ const Confirmation = () => {
         <p><strong>Movie ID:</strong> {state.movieId}</p>
         <p><strong>Name:</strong> {state.name}</p>
         <p><strong>Email:</strong> {state.email}</p>
-        <p><strong>Mobile:</strong> {state.mobile}</p>
+        <p><strong>NO. of Seats:</strong> {state.number}</p>
       </div>
       <Link to="/" className={styles.homeLink}>Back to Home</Link>
     </div>

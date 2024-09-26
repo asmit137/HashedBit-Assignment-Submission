@@ -11,9 +11,7 @@ const App = () => {
           "https://my-json-server.typicode.com/FreSauce/json-ipl/data"
         );
         const data = await response.json();
-        console.log(data); // Check the actual data structure here
-
-        // Sort teams based on NRR in ascending order
+        console.log(data); 
         const sortedTeams = data.sort((a, b) => parseFloat(a.NRR) - parseFloat(b.NRR));
         setTeams(sortedTeams);
       } catch (error) {

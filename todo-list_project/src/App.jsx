@@ -7,7 +7,7 @@ const App = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [currentTask, setCurrentTask] = useState({});
 
-  // Add a new task
+  
   const handleAddTask = () => {
     if (newTask.trim() === "") return;
     const timestamp = new Date().toLocaleString(); // Get current date and time
@@ -15,19 +15,19 @@ const App = () => {
     setNewTask("");
   };
 
-  // Delete a task
+  
   const handleDeleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  // Edit a task
+
   const handleEditTask = (task) => {
     setIsEditing(true);
     setCurrentTask(task);
     setNewTask(task.text);
   };
 
-  // Update the edited task
+
   const handleUpdateTask = () => {
     setTasks(
       tasks.map((task) =>
